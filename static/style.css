@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+  color: #333;
+}
+.container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.books {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background-color: cornflowerblue;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-card h2 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 15px;
+  color: #666;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.book-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #0078ff;
+  color: #ffff;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+
+.book-link:hover {
+  background-color: skyblue;
+}
+
+/* TUGAS BUAT KALIAN */
+/* 1. Setiap Masing" Baris Kartu Dibuat 4 Card */
+/* 2. Ketika di klik Card nya maka akan beralih ke halaman Baca Buku , Button View More nya ddi hapus */

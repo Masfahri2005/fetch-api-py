@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dbooks API</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Data Buku dari API</h1>
+      <div class="books">
+        <!-- isi konten daftar buku -->
+        {% if books %} 
+          {% for book in books %}
+            <div class="book-card">
+              <img src="{{ book.image }}" alt="Book Cover" class="book-image" />
+              <h2>{{ book.title }}</h2>
+              <p><strong>Subtitle: </strong>{{ book.subtitle or "N/A" }}</p>
+              <p><strong>Authors: </strong>{{ book.authors or "N/A" }}</p>
+              <p><strong>ID: </strong>{{ book.id or "N/A" }}</p>
+              <a href="{{ book.url }}" target="_blank" class="book-link">View More</a>
+            </div>
+            {% endfor %}
+          {% else %}
+            <p>Data Buku Tidak Tersedia</p>
+          {% endif %}
+      </div>
+    </div>
+  </body>
+</html>
